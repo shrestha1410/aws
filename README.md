@@ -25,16 +25,19 @@ Hosting any web application
   2. It load is increase , we need to scale or increase the server to balance the load.
 
 # Solution
+
   1. Aws provide to create a virtual machine. Inside this VM ,we can add a server a DB etc. (Multiple cloud infrastructure we can  build).
   2. In this cloud we donot need to plan for server and other IT infrastructure which take much time.
   3. we can easily scale the infrastructure.
   4. In Aws term this VM  is called EC2 instance (Elastic compute cloud).  
                    
 # Create Account 
+
   1. Aws amazon.com
   2. create an account
 
-#EC2 instance (A Virtual machine)
+# EC2 instance (A Virtual machine)
+
   1. Aws console
   2. service section
   3. compute > EC2 > launch instance
@@ -50,8 +53,10 @@ Hosting any web application
   13. edit name of instance
   14. click connect key and now we see all details about our instance
 
-#how to deploy Spring boot project in aws using EC2
-Steps:
+# how to deploy Spring boot project in aws using EC2
+
+## Steps:
+
 1. create a spring boot project with end point
 2. add  <finalName>jarName </finalName> in pom.xml
     the jar will be generrated in target folder with jarName
@@ -60,9 +65,11 @@ Steps:
 4.  copy the ssh url and paste it in terminal where the project path
 
 # s3 
+
  main purpose is to store the jar/war file
 
 # Create bucket
+
  1. Name the bucket and create
  2. make the bucket public otherwise,  it will show the error 403 forbidden
     To make the s3 bucket public
@@ -72,7 +79,8 @@ Steps:
  4. It start downloading
  5. when downloaded run by using command (java -jar jarname.jar)
 
-To run 
+# To run 
+
 1. to get the base url  (EC2 > public DNS IPv4 url)
 2. Then base url:port/endpoint wull how the result in browser
    
